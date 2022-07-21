@@ -11,6 +11,38 @@
   </head>
 
   <body>
+    <header>
+      <div class="header-left-nav">
+        <%= link_to "poteshare", root_path,class: "app-logo"%>
+      </div>
+      <div class="header-right-nav">
+        <% if user_signed_in?%>
+          <div class="nav-item">
+            <%= current_user.name %>
+          </div>
+          <div class="nav-item" id="nav-box-btn">
+            <% if current_user.image? %>
+              <img src="<%= current_user.image %>" alt="画像" class="nav-item-image">
+            <% else %>
+              <%= image_tag '/assets/default.png', class: 'nav-item-image'%>
+            <% end %>
+          </div>
+            <ul id="nav-item-box" style="display: none;">
+              <li><%= link_to "ルーム登録",new_room_path%></li>
+              <li><%= link_to "予約済みルーム一覧","#"%></li>
+              <li><%= link_to "登録済みルーム一覧",rooms_path %></li>
+              <li><%= link_to "設定","#"%></li>
+              <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
+            </ul>
+        <% else %>
+          <div class="nav-item">
+            <%= link_to "ログイン", new_user_session_path, class:"login-btn btn"%>
+            <%= link_to "新規登録", new_user_registration_path, class:"signin-btn btn"%>
+          </div>
+        <% end %>
+      </div>
+    </header>
     <%= yield %>
+    <%= javascript_pack_tag 'custom'%>
   </body>
 </html>

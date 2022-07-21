@@ -1,0 +1,89 @@
+.form-wrapper{
+  width: 350px;
+  height: 450px;
+  margin: 60px auto 0;
+  border-radius: 4px;
+  border: 1px #ddd solid;
+}
+.form-box{
+  padding: 20px 26px;
+}
+
+h2 {
+  font-weight: 400px;
+  font-size: 28px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+  color: #111111;
+}
+
+.name-field{
+  margin-bottom: 13px;
+}
+.email-field{
+  margin-bottom: 22px;
+}
+.password-field, .passwordconfirm-field{
+  margin-bottom: 22px;
+}
+.name-field label, .email-field label , .password-field label, .passwordconfirm-field label, em{
+  font-weight: 700px;
+  font-size: 13px;
+  padding-left: 2px;
+  padding-bottom: 2px;
+}
+.name-field input{
+  width: 100%;
+  height: 31px;
+  border:1px solid #a6a6a6;
+  box-shadow: 0 1px rgba(0,0,0,0) inset;
+  border-radius: 3px;
+  padding: 0 7px;
+}
+.email-field input{
+  width: 100%;
+  height: 31px;
+  border:1px solid #a6a6a6;
+  box-shadow: 0 1px rgba(0,0,0,0) inset;
+  border-radius: 3px;
+  padding: 0 7px;
+}
+.password-field input{
+  width: 100%;
+  height: 31px;
+  border:1px solid #a6a6a6;
+  box-shadow: 0 1px rgba(0,0,0,0) inset;
+  border-radius: 3px;
+  padding: 0 7px;
+}
+.passwordconfirm-field input{
+  width: 100%;
+  height: 31px;
+  border:1px solid #a6a6a6;
+  box-shadow: 0 1px rgba(0,0,0,0) inset;
+  border-radius: 3px;
+  padding: 0 7px;
+}
+
+.actions{
+  text-align: center;
+  line-height: 31px;
+  margin: auto;
+  margin-bottom: 18px;
+  width: 100%;
+  background-color: #4682b4;
+  color: #ffff;
+  border-radius: 3px;
+}
+.actions:hover{
+  cursor: pointer;
+}
+.form-box a{
+  font-size: 16px;
+  color: gray;
+}
+
+.rememberable-field{
+  margin-bottom: 13px;
+}

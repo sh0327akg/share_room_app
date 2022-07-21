@@ -1,0 +1,63 @@
+body{
+  font-size: 18px;
+}
+header{
+  background-color: #4682b4;
+  width: 100%;
+  height: 70px;
+  padding: 4px 30px;
+  align-items: center;
+  vertical-align: middle;
+  line-height: 50px;
+}
+.header-left-nav{
+  float: left;
+}
+.header-right-nav{
+  float: right;
+  align-items: center;
+}
+.nav-item{
+  display: inline-block;
+  color: #ffff;
+}
+#nav-item-box{
+  background-color: #fff;
+  border: 3px solid #f6f8f9;
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  z-index: 1000;
+  padding:15px;
+}
+#nav-item-box li{
+  font-size: 16px;
+  line-height: 30px;
+  padding: 3px 5px;
+}
+.app-logo{
+  font-size: 34px;
+  color: #fff;
+  vertical-align: middle;
+}
+.btn{
+  padding: 6px 24px;
+  border-radius: 5px;
+  font-size: 18px;
+  display: inline-block;
+  color: #ffff;
+}
+
+.login-btn{
+  background-color: #335E82;
+  margin-right: 14px;
+}
+.signin-btn{
+  background-color: #252E36;
+}
+
+.nav-item-image{
+  width: 65px;
+  height: 65px;
+  border-radius: 50px;
+}
